@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Gallary</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./fevicon/images.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- list of Thumbnail Images  -->
+    <section class="topSection">
+        <div class="gallary">
+            <img src="./img/img (1).jpg"  class="images"  onclick="getImage(this)" alt="">
+            <img src="./img/img (2).jpg"  class="images"  onclick="getImage(this)" alt="">
+            <img src="./img/img (4).jpg"  class="images"  onclick="getImage(this)" alt="">
+            <img src="./img/img (5).jpg"  class="images"  onclick="getImage(this)" alt="">
+            <img src="./img/img (6).jpg"  class="images"  onclick="getImage(this)" alt="">
+            <img src="./img/img (7).jpg"  class="images"  onclick="getImage(this)" alt="">
+            <img src="./img/img (8).jpg"  class="images"  onclick="getImage(this)" alt="">
+            <img src="./img/img (9).jpg"  class="images"  onclick="getImage(this)" alt="">
+            <img src="./img/img (10).jpg" class="images"  onclick="getImage(this)" alt="">
+            <img src="./img/img (11).jpg" class="images"  onclick="getImage(this)" alt="">
+            <img src="./img/img (12).jpg" class="images"  onclick="getImage(this)" alt="">
+        </div>
+       
+        <p>Car Gallary</p>
+        <button class="slideShow" onclick="makeSlideShow()">Slide Show</button>
+        <button class="stopSlideShow" onclick="stopSlide()">Stop</button>
+    </section>
+    
+    <!-- image slideshow section  -->
+    <section>
+        <div class="slideshow-container" id="slideshow-container">
+            
+            <div class="slide fade">
+                 <img src="./img/img (1).jpg" alt="Slide 1">
+            </div>    
+            <div class="slide fade">
+                 <img src="./img/img (2).jpg" alt="Slide 2">
+            </div>
+            <div class="slide fade">
+                 <img src="./img/img (4).jpg" alt="Slide 3">
+            </div>
+            <div class="slide fade">
+                 <img src="./img/img (5).jpg" alt="Slide 4">
+            </div>
+            <div class="slide fade">
+                 <img src="./img/img (6).jpg" alt="Slide 5">
+            </div>
+            <div class="slide fade">
+                 <img src="./img/img (7).jpg" alt="Slide 6">
+            </div>
+            <div class="slide fade">
+                 <img src="./img/img (8).jpg" alt="Slide 7">
+            </div>
+            <div class="slide fade">
+                 <img src="./img/img (9).jpg" alt="Slide 8">
+            </div>
+            <div class="slide fade">
+                 <img src="./img/img (10).jpg" alt="Slide 9">
+            </div>
+            <div class="slide fade">
+                 <img src="./img/img (11).jpg" alt="Slide 10">
+            </div>
+            <div class="slide fade">
+                 <img src="./img/img (12).jpg" alt="Slide 11">
+            </div>
+            
+        </div>    
+        
+    </section>
+
+    <!-- show image and make img enlarge -->
+    <section >
+     <div  class="container">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <img src="" alt="" id="slidingImg">
+     </div>
+
+    </section>
+    <script src="./script.js"></script>
+</body>
+</html>
+
+
+
+

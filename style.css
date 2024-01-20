@@ -1,0 +1,140 @@
+*{
+ background-color: black;
+ color: white;
+}
+
+body{
+    padding-top: 10px;
+}
+
+
+/* top section photos css */
+.gallary{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.gallary > img{
+    width: 115px;
+    height: 100px;
+    border-radius: 5px;
+}
+
+.gallary > img:hover{
+    box-shadow: 5px 5px 5px 5px #8dd2e980;
+}
+
+p{
+    font-family: 'Bungee Spice', sans-serif;
+    font-size: xx-large;
+    text-align: center;
+    border-bottom: 5px double #ff5e00;
+}
+
+.container{
+    position: relative;
+    display: none;
+    text-align-last: center;
+}
+
+#slidingImg{
+    width: 70%;
+    border-radius: 15px;
+}
+
+.slideShow{
+    font-size: small;
+    padding: 5px;
+    border-radius: 10px;
+    width: 90px;
+    position: absolute;  
+    top: 140px;
+    left: 10px;
+}
+
+
+
+span{
+    z-index: +1;
+    padding-right: 11px;
+    padding-left: 11px;
+}
+.closebtn {
+    position: absolute;
+    top: 8px;
+    right: 220px;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+    background-color: transparent;
+  
+  }
+
+  .closebtn:hover{
+    background-color: rgb(219, 219, 219);
+    color: black;
+    border-radius: 50px;
+    opacity: 0.5;
+    font-size: 42px;
+  }
+
+  span{
+    text-decoration: none;
+  }
+
+
+ /* sliding image css */
+
+
+  .slideshow-container {
+  
+    /* width: 100%; */
+    position: absolute;
+    top: 175px;
+    left: 0x;
+    z-index: -1;
+  }
+
+  button:hover {
+    color: black;
+    background-color: #36e6d7 ;
+  }
+
+  .slide{
+     display: none;
+  }
+
+  .fade + img{
+    width: 500px;
+    height: 200px;
+  }
+
+
+  .slide  {
+    display: none;
+    position: relative;
+    width: 100%;
+    
+  }
+
+  .slide > img{
+  width: 100%;
+  border-radius: 15px;
+  }
+   
+  /* Fade animation */
+.fade {
+    animation: fade 2s ease-in-out  infinite;
+}
+
+
+/* stop button css */
+.stopSlideShow{
+    padding: 5px;
+    font-size: small;
+    width: 50px;
+    border-radius: 10px;
+    position: absolute;  
+    top: 140px;
+    left: 100px;
+}
